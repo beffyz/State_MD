@@ -1,0 +1,11 @@
+.plus-minus {
+  display: flex;
+  border: 1px solid black;
+  max-width: 245px;
+  width: 100%;
+  gap: 5px;
+}
+
+.plus-minus__element {
+  margin: 10px 0 10px 5px;
+}
