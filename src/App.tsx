@@ -4,6 +4,8 @@ import './assets/normalize.css';
 import './assets/flexboxgrid.css';
 import PlusMinusBox from './components/PlusMinusBox/PlusMinusBox';
 import MultiplyDivideBox from './components/MultiplyDivideBox/MultiplyDivideBox';
+import PizzaButton from './components/PizzaButton/PizzaButton';
+import ColorBox from './components/ColorBox/ColorBox';
 
 const App = () => (
   <section>
@@ -20,6 +22,16 @@ const App = () => (
           <div className="math-box">
             <MultiplyDivideBox />
           </div>
+        </div>
+      </div>
+      <div className="row">
+        <div className="col-md-12">
+          <PizzaButton />
+        </div>
+      </div>
+      <div className="row">
+        <div className="col-md-6">
+          <ColorBox />
         </div>
       </div>
     </div>
