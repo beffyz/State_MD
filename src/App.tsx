@@ -6,6 +6,7 @@ import PlusMinusBox from './components/PlusMinusBox/PlusMinusBox';
 import MultiplyDivideBox from './components/MultiplyDivideBox/MultiplyDivideBox';
 import PizzaButton from './components/PizzaButton/PizzaButton';
 import ColorBox from './components/ColorBox/ColorBox';
+import PressedButton from './components/PressedButton/PressedButton';
 
 const App = () => (
   <section>
@@ -30,8 +31,11 @@ const App = () => (
         </div>
       </div>
       <div className="row">
-        <div className="col-md-6">
+        <div>
           <ColorBox />
+        </div>
+        <div>
+          <PressedButton />
         </div>
       </div>
     </div>
