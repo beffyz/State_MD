@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import './App.scss';
 import './assets/normalize.css';
 import './assets/flexboxgrid.css';
@@ -7,6 +6,9 @@ import MultiplyDivideBox from './components/MultiplyDivideBox/MultiplyDivideBox'
 import PizzaButton from './components/PizzaButton/PizzaButton';
 import ColorBox from './components/ColorBox/ColorBox';
 import PressedButton from './components/PressedButton/PressedButton';
+import InputBox from './components/InputBox/InputBox';
+import ActionButtonBox from './components/ActionButtonBox/ActionButtonBox';
+import Cards from './components/Cards/Cards';
 
 const App = () => (
   <section>
@@ -37,6 +39,17 @@ const App = () => (
         <div>
           <PressedButton />
         </div>
+      </div>
+      <div className="row">
+        <div>
+          <InputBox />
+        </div>
+      </div>
+      <div className="row">
+        <ActionButtonBox />
+      </div>
+      <div className="row">
+        <Cards />
       </div>
     </div>
   </section>
