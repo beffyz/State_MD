@@ -11,6 +11,7 @@ import ActionButtonBox from './components/ActionButtonBox/ActionButtonBox';
 import Cards from './components/Cards/Cards';
 import FirstCalculator from './components/FirstCalculator/FirstCalculator';
 import SecondCalculator from './components/SecondCalculator/SecondCalculator';
+import Calculator from './components/Calculator/Calculator';
 
 const App = () => (
   <section>
@@ -58,6 +59,9 @@ const App = () => (
       </div>
       <div className="row">
         <SecondCalculator />
+      </div>
+      <div className="row">
+        <Calculator />
       </div>
     </div>
   </section>

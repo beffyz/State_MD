@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './cards.scss';
 
-const cards = () => {
+const Cards = () => {
   const cardDetails = [
     {
       id: '1',
@@ -47,6 +47,13 @@ const cards = () => {
     },
   ];
 
+  const CloseMe = () => {
+    const close = document.querySelector<HTMLDivElement>('.cards__container--card');
+
+    // @ts-ignore
+    close.classList.add('hidden');
+  };
+
   return (
     <div className="cards">
       <div className="cards">
@@ -63,7 +70,7 @@ const cards = () => {
       <div className="cards__container">
         {cardLibrary.map((item) => (
           <div key={Math.random()} className="cards__container--card">
-            <button className="cards__container--btn">x</button>
+            <button onClick={CloseMe} className="cards__container--btn">x</button>
             <p key={Math.random()}>
               ID:
               {' '}
@@ -82,4 +89,4 @@ const cards = () => {
   );
 };
 
-export default cards;
+export default Cards;

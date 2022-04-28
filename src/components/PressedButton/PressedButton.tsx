@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './pressedButton.scss';
 
-const pressedButton = () => {
+const PressedButton = () => {
   const [count, setCount] = useState('Nav nospiests');
   const changeText = () => {
     if (count.length === 13) {
@@ -21,4 +21,4 @@ const pressedButton = () => {
   );
 };
 
-export default pressedButton;
+export default PressedButton;

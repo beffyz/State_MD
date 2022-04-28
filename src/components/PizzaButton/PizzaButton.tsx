@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './pizzaButton.scss';
 
-const pizzaButton = () => {
+const PizzaButton = () => {
   const [count, setCount] = useState('pica');
   const addPizza = () => {
     setCount(`${count} pica`);
@@ -21,4 +21,4 @@ const pizzaButton = () => {
   );
 };
 
-export default pizzaButton;
+export default PizzaButton;

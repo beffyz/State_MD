@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './multiplyDivideBox.scss';
 
-const multiplyDivideBox = () => {
+const MultiplyDivideBox = () => {
   const [count, setCount] = useState(0);
 
   const secondButtonLine = [
@@ -56,4 +56,4 @@ const multiplyDivideBox = () => {
   );
 };
 
-export default multiplyDivideBox;
+export default MultiplyDivideBox;

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './plusMinusBox.scss';
 
-const plusMinusBox = () => {
+const PlusMinusBox = () => {
   const [count, setCount] = useState(0);
 
   const firstButtonLine = [
@@ -42,4 +42,4 @@ const plusMinusBox = () => {
   );
 };
 
-export default plusMinusBox;
+export default PlusMinusBox;

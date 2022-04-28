@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './secondCalculator.scss';
 
-const secondCalculator = () => {
+const SecondCalculator = () => {
   const [count, setCount] = useState(0);
   const [firstInput, setFirstInput] = useState(10);
   const [secondInput, setSecondInput] = useState(10);
@@ -26,27 +26,32 @@ const secondCalculator = () => {
   ];
 
   return (
-    <div>
-      <span key="1">{count}</span>
-      <div>
+    <div className="second-calculator">
+      <div className="second-calculator__box">
         <input
-          className="first-input"
+          className="second-calculator__input"
           type="number"
           placeholder={(firstInput).toString()}
           onChange={((e) => { setFirstInput(e.target.valueAsNumber); })}
         />
         {btnLibrary.map((item) => (
-          <button onClick={item.onClick}>{item.btnText}</button>
+          <button className="second-calculator__btn" onClick={item.onClick}>{item.btnText}</button>
         ))}
         <input
-          className="second-input"
+          className="second-calculator__input"
           type="number"
           placeholder={(secondInput).toString()}
           onChange={((e) => { setSecondInput(e.target.valueAsNumber); })}
         />
       </div>
+      <span className="second-calculator__span">
+        {' '}
+        =
+        {' '}
+        {count}
+      </span>
     </div>
   );
 };
 
-export default secondCalculator;
+export default SecondCalculator;

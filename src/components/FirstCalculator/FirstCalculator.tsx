@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './firstCalculator.scss';
 
-const firstCalculator = () => {
+const FirstCalculator = () => {
   const [count, setCount] = useState(0);
   const [takeValue, setTakeValue] = useState(10);
   const btnArray = [
@@ -43,4 +43,4 @@ const firstCalculator = () => {
   );
 };
 
-export default firstCalculator;
+export default FirstCalculator;

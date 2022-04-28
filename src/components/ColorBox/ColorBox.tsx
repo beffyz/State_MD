@@ -1,7 +1,7 @@
 import react, { useState } from 'react';
 import './colorBox.scss';
 
-const colorBox = () => {
+const ColorBox = () => {
   const [color, setColor] = useState('bisque');
 
   const colorArray = ['red', 'blue', 'lightgreen'];
@@ -19,4 +19,4 @@ const colorBox = () => {
   );
 };
 
-export default colorBox;
+export default ColorBox;
