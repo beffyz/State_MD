@@ -9,6 +9,8 @@ import PressedButton from './components/PressedButton/PressedButton';
 import InputBox from './components/InputBox/InputBox';
 import ActionButtonBox from './components/ActionButtonBox/ActionButtonBox';
 import Cards from './components/Cards/Cards';
+import FirstCalculator from './components/FirstCalculator/FirstCalculator';
+import SecondCalculator from './components/SecondCalculator/SecondCalculator';
 
 const App = () => (
   <section>
@@ -50,6 +52,12 @@ const App = () => (
       </div>
       <div className="row">
         <Cards />
+      </div>
+      <div className="row">
+        <FirstCalculator />
+      </div>
+      <div className="row">
+        <SecondCalculator />
       </div>
     </div>
   </section>

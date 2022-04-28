@@ -4,43 +4,46 @@ import './cards.scss';
 const cards = () => {
   const cardDetails = [
     {
-      id: 1,
+      id: '1',
       title: 'First card',
     },
     {
-      id: 2,
+      id: '2',
       title: 'Second card',
     },
     {
-      id: 3,
+      id: '3',
       title: 'Third card',
     },
     {
-      id: 4,
+      id: '4',
       title: 'Fourth card',
     },
     {
-      id: 5,
+      id: '5',
       title: 'Fifth card',
     },
     {
-      id: 6,
+      id: '6',
       title: 'Sixth card',
     },
   ];
-  const [cardLibrary, setCardLibrary] = useState([cardDetails.map((item) => (item))]);
+  const [cardLibrary, setCardLibrary] = useState(cardDetails);
+  const titleUpperCase = cardLibrary.map((item) => ({ id: item.id, title: item.title.toUpperCase() }));
   const buttonDetails = [
     {
-      title: 'Reset',
-      onClick: () => { setCardLibrary([cardDetails.map((item) => (item))]); },
+      buttonTitle: 'Reset',
+      onClick: () => { setCardLibrary(cardDetails); },
     },
     {
-      title: 'Remove All',
-      onClick: () => {},
+      buttonTitle: 'Remove All',
+      onClick: () => { setCardLibrary([]); },
     },
     {
-      title: 'Make all titles UPPERCASE',
-      onClick: () => { setCardLibrary([cardDetails.map((item) => (item))]); },
+      buttonTitle: 'Make all titles UPPERCASE',
+      onClick: () => {
+        setCardLibrary(titleUpperCase);
+      },
     },
   ];
 
@@ -53,16 +56,14 @@ const cards = () => {
             onClick={item.onClick}
             className="cards__btn"
           >
-            {item.title}
+            {item.buttonTitle}
           </button>
         ))}
       </div>
       <div className="cards__container">
-        {cardDetails.map((item) => (
-          <div
-            key={Math.random()}
-            className="cards__container--card"
-          >
+        {cardLibrary.map((item) => (
+          <div key={Math.random()} className="cards__container--card">
+            <button className="cards__container--btn">x</button>
             <p key={Math.random()}>
               ID:
               {' '}

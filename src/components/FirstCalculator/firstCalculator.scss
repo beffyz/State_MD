@@ -1,0 +1,12 @@
+.first-calculator {
+  margin-top: 20px;
+  border: 1px solid black;
+}
+
+.first-calculator__btn {
+  margin: 5px;
+
+  &:hover {
+    background: lightgreen;
+  }
+}
